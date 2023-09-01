@@ -72,6 +72,8 @@ def upload_file():
                 if scan_result_code == 1:
                     amaas.grpc.quit(handle)
                     return render_template('scan_results.html', scan_result_code=1, scan_results=scan_result_dict)
+                print("Scan result:", scan_result)
+                sys.stdout.flush()  #flush the stdout buffer
             amaas.grpc.quit(handle)
             return render_template('scan_results.html', scan_message="File uploaded successfully.", scan_result_code=0)
 
