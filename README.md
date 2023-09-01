@@ -15,7 +15,22 @@ Before you begin, ensure you have met the following requirements:
 ```bash
 git clone https://github.com/jmlake569/AMaaS_demo_app.git
 cd AMaaS_demo_app
+```
 
 ### 2. Build the container
 
+```bash
 docker build -t flask-malware-scanner .
+```
+
+### 3. Run the contianer
+
+```bash
+docker run -p 5000:5000 flask-malware-scanner
+```
+
+### 4. Access the application
+
+Open your web browser and navigate to http://localhost:5000 to access the application.
+
+![Alt text](images/malewareoneUI.png)
