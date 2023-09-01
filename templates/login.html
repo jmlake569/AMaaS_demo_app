@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MalwareONE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Set the background color of the body to a dark gray */
+        body {
+            background-color: #111; /* Dark gray */
+            color: #dcdcdc; /* Light gray color for text */
+        }
+
+        /* Style for the banner section */
+        .banner {
+            background-color: #1a1a1a; /* Darker background color */
+            padding: 20px; /* Add some padding to the banner */
+            text-align: center; /* Center align text */
+        }
+
+        /* Style for the company name (h1) */
+        .company-name {
+            font-size: 3rem; /* Increase font size */
+            font-family: 'Courier New', monospace; /* Retro-style font */
+            color: #007acc; /* Soft blue color */
+            text-transform: none; /* Normal text for "Malware" */
+            letter-spacing: 2px; /* Add letter spacing */
+            margin-top: 10px; /* Adjust top margin */
+        }
+
+        /* Style for "ONE" in the company name */
+        .company-name span {
+            font-weight: bold; /* Make "ONE" bolder */
+            font-size: 3.2rem; /* Slightly bigger font size for "ONE" */
+            text-transform: uppercase; /* Uppercase text for "ONE" */
+        }
+
+        /* Style for the login form container */
+        .login-container {
+            margin-top: 30px; /* Adjust top margin */
+        }
+
+        /* Style for the "Continue as Guest" button */
+        .continue-as-guest {
+            margin-top: 10px; /* Adjust top margin */
+        }
+
+        /* Style for the page break and "OR" text */
+        .page-break {
+            text-align: center;
+            margin-top: 20px;
+            position: relative; /* Relative positioning for centering */
+        }
+
+        /* Style for "OR" text */
+        .or-text {
+            font-size: 2rem; /* Large font size for "OR" */
+            position: absolute; /* Absolute positioning for centering */
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Center text perfectly */
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner Section -->
+    <div class="banner text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Company Name -->
+                    <h1 class="company-name">Malware<span>ONE</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container login-container">
+        <h2>Login</h2>
+        <div class="row">
+            <div class="col-md-5">
+                <form method="POST" action="/upload"> <!-- Redirect to upload page after login -->
+                    <!-- Username Input -->
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" name="username">
+                    </div>
+                    <!-- Password Input -->
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+            <div class="col-md-2">
+                <div class="page-break">
+                    <hr> <!-- Page break line -->
+                    <p class="or-text">OR</p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <!-- Continue as Guest Button -->
+                <form method="POST" action="/upload">
+                    <button type="submit" class="btn btn-secondary continue-as-guest">Continue as Guest</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

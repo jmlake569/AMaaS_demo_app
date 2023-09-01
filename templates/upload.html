@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File - MalwareONE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Set the background color of the body to a dark gray */
+        body {
+            background-color: #111; /* Dark gray */
+            color: #dcdcdc; /* Light gray color for text */
+        }
+
+        /* Style for the banner section */
+        .banner {
+            background-color: #1a1a1a; /* Darker background color */
+            padding: 20px; /* Add some padding to the banner */
+            text-align: center; /* Center align text */
+        }
+
+        /* Style for the company name (h1) */
+        .company-name {
+            font-size: 3rem; /* Increase font size */
+            font-family: 'Courier New', monospace; /* Retro-style font */
+            color: #007acc; /* Soft blue color */
+            text-transform: none; /* Normal text for "Malware" */
+            letter-spacing: 2px; /* Add letter spacing */
+            margin-top: 10px; /* Adjust top margin */
+        }
+
+        /* Style for "ONE" in the company name */
+        .company-name span {
+            font-weight: bold; /* Make "ONE" bolder */
+            font-size: 3.2rem; /* Slightly bigger font size for "ONE" */
+            text-transform: uppercase; /* Uppercase text for "ONE" */
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner Section -->
+    <div class="banner text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Company Name -->
+                    <h1 class="company-name">Malware<span>ONE</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Upload a File</h2>
+        <form method="POST" enctype="multipart/form-data">
+            <!-- File Input -->
+            <div class="form-group">
+                <label for="file">Select a File:</label>
+                <input type="file" class="form-control-file" id="file" name="file">
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
