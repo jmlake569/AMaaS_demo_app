@@ -14,4 +14,8 @@ Before you begin, ensure you have met the following requirements:
 
 ```bash
 git clone https://github.com/jmlake569/AMaaS_demo_app.git
-cd AMAAS_DEMO_APP
+cd AMaaS_demo_app
+
+### 2. Build the container
+
+docker build -t flask-malware-scanner .
