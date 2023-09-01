@@ -46,6 +46,10 @@ FYI: The login page is not recording user data please just select "Continue as g
 
 ### 5. Upload a file
 
+This is the upload page:
+
+![Alt text](images/upload_page.png)
+
 This is an example of a non-malicious file being uploaded: 
 
 ![Alt text](images/non_malicious_file.png)
