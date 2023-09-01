@@ -7,7 +7,7 @@ This is a simple Flask web application that demonstrates how to scan uploaded fi
 Before you begin, ensure you have met the following requirements:
 
 - **Docker**: You must have Docker installed on your system. If not, you can download it [here](https://docs.docker.com/get-docker/).
-- **Cloud One account**: This demo app required a Cloud One account and a valid Cloud One API key in the "us-1" region. Free Cloud One trail available here: (https://cloudone.trendmicro.com/m)
+- **Cloud One account**: This demo app requires a Cloud One account and a valid Cloud One API key in the "us-1" region. Free Cloud One trial available here: (https://cloudone.trendmicro.com/m)
 
 ## Getting Started
 
